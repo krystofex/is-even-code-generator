@@ -1,9 +1,8 @@
- 
 import { Generate } from '../src';
 
-describe('Test if generated code works', () => { 
-  const IsEven = (num:number) => eval("(" + Generate(0, 100) + ")")(num);
- 
+describe('Test if generated code works', () => {
+  const IsEven = (num: number) => eval('(' + Generate(0, 100) + ')')(num);
+
   it('test', () => {
     expect(IsEven(1)).toEqual(false);
     expect(IsEven(2)).toEqual(true);
@@ -13,5 +12,5 @@ describe('Test if generated code works', () => {
     expect(IsEven(5)).toEqual(false);
     expect(IsEven(6)).toEqual(true);
     expect(IsEven(7)).toEqual(false);
-  }); 
+  });
 });

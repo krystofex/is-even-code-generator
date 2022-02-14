@@ -11,13 +11,9 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "lint": "tsdx lint",
-    "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why"
+    "lint": "tsdx lint" 
   },
   "peerDependencies": {},
   "husky": {
@@ -44,10 +40,8 @@
       "limit": "10 KB"
     }
   ],
-  "devDependencies": {
-    "@size-limit/preset-small-lib": "^7.0.8",
-    "husky": "^7.0.4",
-    "size-limit": "^7.0.8",
+  "devDependencies": { 
+    "husky": "^7.0.4", 
     "ts-node": "^10.5.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
